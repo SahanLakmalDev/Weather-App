@@ -25,13 +25,13 @@ searchBtn.addEventListener("click",() => {
             document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
             if(data.weather[0].main == "Clouds"){
-                document.querySelector(".weather-icon").src = "weather-app-img/images/clouds.png";
+                document.querySelector(".weather-icon").src = "../weather-app-img/images/clouds.png";
             }else if(data.weather[0].main == "Clear"){
-                document.querySelector(".weather-icon").src = "weather-app-img/images/clear.png";
+                document.querySelector(".weather-icon").src = "../weather-app-img/images/clear.png";
             }else if(data.weather[0].main == "Rain"){
-                document.querySelector(".weather-icon").src = "weather-app-img/images/rain.png";
+                document.querySelector(".weather-icon").src = "../weather-app-img/images/rain.png";
             }else if(data.weather[0].main == "Drizzle"){
-                document.querySelector(".weather-icon").src = "weather-app-img/images/drizzle.png";
+                document.querySelector(".weather-icon").src = "../weather-app-img/images/drizzle.png";
             }
             document.querySelector(".weather").style.display = "block";
             document.querySelector(".error").style.display = "none";
